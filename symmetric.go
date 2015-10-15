@@ -39,7 +39,7 @@ func GenSymmetricKey(bits int) (k []byte, err error) {
 //   Params:
 //       size: Key size in bits. Ex: 256 bits for HMAC SHA-256 and 512 bits for HMAC SHA-512.
 //       outputFile: Output key file.
-//       perm: Permission of key file. The final permission of file will be perm - umask. Ex: 0666 - 002(centos) = 0644.
+//       perm: Permission of key file. The final permission of file will be perm - umask. Ex: 0666 - 002(centos) = 0664.
 //   Return:
 //       err: error.
 func GenSymmetricKeyFile(bits int, outputFile string, perm os.FileMode) (err error) {
