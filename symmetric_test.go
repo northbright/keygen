@@ -11,7 +11,7 @@ import (
 
 func ExampleGenSymmetricKey() {
 	var err error
-	size := 256
+	size := 256 // Key size = 256 bits.
 	key := make([]byte, size)
 
 	if key, err = keygen.GenSymmetricKey(size); err != nil {
@@ -26,11 +26,11 @@ func ExampleGenSymmetricKey() {
 
 func ExampleGenSymmetricKeyFile() {
 	var err error
-	size := 512
+	size := 512 // Key size = 256 bits.
 
 	u, _ := user.Current()
 	username := u.Username
-	keyFile := fmt.Sprintf("/home/%v/my.key", username)
+	keyFile := fmt.Sprintf("/home/%v/my.key", username) // make a absolute key path for current user.
 
 	p, err := pathhelper.GetAbsPath(keyFile)
 	if err != nil {
