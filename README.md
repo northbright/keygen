@@ -15,8 +15,8 @@ Package keygen is a helper to generate symmetric key(Ex: HMAC).
     // Compare a zero-value byte array to see if key is generated.
     fmt.Printf("%v", !bytes.Equal(key, make([]byte, size)))
 
-#### [CLI](https://github.com/northbright/keygen/tree/master/cli/gensymmetrickey) to generate symmetric key
-* gensymmetrickey
+#### [CLI to generate symmetric key](https://github.com/northbright/keygen/tree/master/cli/gensymmetrickey)
+* [gensymmetrickey](https://github.com/northbright/keygen/tree/master/cli/gensymmetrickey)
 
   * Generate symmetric key(Ex: HMAC).
   * Usage:  
