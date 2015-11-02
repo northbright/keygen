@@ -25,6 +25,7 @@ Package keygen is a helper to generate symmetric key(Ex: HMAC).
           Ex:
           gensymmetrickey -b=512 -o="mykey.dat"
           
+  * [Binary Release](https://github.com/northbright/keygen/releases)
 
 #### Documentation
 * [API Reference](http://godoc.org/github.com/northbright/keygen)
