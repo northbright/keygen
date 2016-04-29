@@ -3,10 +3,11 @@ package keygen_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/northbright/keygen"
-	"github.com/northbright/pathhelper"
 	"os"
 	"os/user"
+
+	"github.com/northbright/keygen"
+	"github.com/northbright/pathhelper"
 )
 
 func ExampleGenSymmetricKey() {
