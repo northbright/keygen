@@ -3,10 +3,11 @@ package keygen
 import (
 	"crypto/rand"
 	"errors"
-	"github.com/northbright/errorhelper"
-	"github.com/northbright/pathhelper"
 	"io/ioutil"
 	"os"
+
+	"github.com/northbright/errorhelper"
+	"github.com/northbright/pathhelper"
 )
 
 const (
