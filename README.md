@@ -1,8 +1,8 @@
 # keygen
 
-keygen is a [Golang](http://golang.org) package which provides helper functions to generate symmetric key(Ex: HMAC).
-
 [![Build Status](https://travis-ci.org/northbright/keygen.svg?branch=master)](https://travis-ci.org/northbright/keygen)
+
+keygen is a [Golang](http://golang.org) package which provides helper functions to generate symmetric key(Ex: HMAC).
 
 #### Create Symmetric Algorithm Key for HMAC SHA-256
 
