@@ -3,8 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/northbright/keygen"
 	"os"
+
+	"github.com/northbright/keygen"
 )
 
 const (
