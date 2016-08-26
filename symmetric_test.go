@@ -31,7 +31,7 @@ func ExampleGenSymmetricKeyFile() {
 
 	u, _ := user.Current()
 	username := u.Username
-	keyFile := fmt.Sprintf("/home/%v/my.key", username) // make a absolute key path for current user.
+	keyFile := fmt.Sprintf("/home/%v/my.key", username) // make absolute key path for current user.
 
 	p, err := pathhelper.GetAbsPath(keyFile)
 	if err != nil {
