@@ -2,7 +2,6 @@ package keygen
 
 import (
 	"crypto/rand"
-	"errors"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -23,7 +22,7 @@ const (
 //       err: error.
 func GenSymmetricKey(bits int) (k []byte, err error) {
 	if bits <= 0 || bits%8 != 0 {
-		return nil, errors.New(keySizeError)
+		return nil, fmt.Errorf(keySizeError)
 	}
 
 	size := bits / 8
