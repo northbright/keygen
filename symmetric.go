@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	KeySizeError string = "Key size error" // Key size error message.
+	keySizeError string = "Key size error" // Key size error message.
 )
 
 // GenSymmetricKey generates key byte array for symmetric key alogorithm like HMAC.
@@ -23,7 +23,7 @@ const (
 //       err: error.
 func GenSymmetricKey(bits int) (k []byte, err error) {
 	if bits <= 0 || bits%8 != 0 {
-		return nil, errors.New(KeySizeError)
+		return nil, errors.New(keySizeError)
 	}
 
 	size := bits / 8
