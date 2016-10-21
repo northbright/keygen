@@ -14,7 +14,7 @@ const (
 	KeySizeError string = "Key size error" // Key size error message.
 )
 
-// GenSymmetricKey() generates key byte array for symmetric key alogorithm like HMAC.
+// GenSymmetricKey generates key byte array for symmetric key alogorithm like HMAC.
 //
 //   Params:
 //       size: Key size in bits. Ex: 256 bits for HMAC SHA-256 and 512 bits for HMAC SHA-512.
@@ -35,7 +35,7 @@ func GenSymmetricKey(bits int) (k []byte, err error) {
 	return k, nil
 }
 
-// GenSymmetricKeyFile() generates key file for symmetric key alogrithm like HMAC.
+// GenSymmetricKeyFile generates key file for symmetric key alogrithm like HMAC.
 //
 //   Params:
 //       size: Key size in bits. Ex: 256 bits for HMAC SHA-256 and 512 bits for HMAC SHA-512.
