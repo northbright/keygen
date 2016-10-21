@@ -3,10 +3,10 @@ package keygen
 import (
 	"crypto/rand"
 	"errors"
+	"fmt"
 	"io/ioutil"
 	"os"
 
-	"github.com/northbright/errorhelper"
 	"github.com/northbright/pathhelper"
 )
 
@@ -44,8 +44,8 @@ func GenSymmetricKey(bits int) (k []byte, err error) {
 //   Return:
 //       err: error.
 func GenSymmetricKeyFile(bits int, outputFile string, perm os.FileMode) (err error) {
-	if err = errorhelper.GenEmptyStringError(outputFile, "outputFile"); err != nil {
-		return err
+	if len(outputFile) == 0 {
+		return fmt.Errorf("Empty output file")
 	}
 
 	p := ""
