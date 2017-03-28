@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/northbright/keygen.svg?branch=master)](https://travis-ci.org/northbright/keygen)
 [![Go Report Card](https://goreportcard.com/badge/github.com/northbright/keygen)](https://goreportcard.com/report/github.com/northbright/keygen)
+[![GoDoc](https://godoc.org/github.com/northbright/keygen?status.svg)](https://godoc.org/github.com/northbright/keygen)
 
 keygen is a [Golang](http://golang.org) package which provides helper functions to generate symmetric key(Ex: HMAC).
 
